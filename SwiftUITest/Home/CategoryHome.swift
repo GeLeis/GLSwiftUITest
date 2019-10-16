@@ -21,7 +21,7 @@ struct CategoryHome: View {
         Common.landmarkData.filter { $0.isFeatured }
     }
     @State var showingProfile = false
-    
+    @EnvironmentObject var userData: UserData
     var profileButton: some View {
         Button(action: { self.showingProfile.toggle() }) {
             Image(systemName: "person.crop.circle")
@@ -50,7 +50,8 @@ struct CategoryHome: View {
             .navigationBarTitle(Text("Featured"))
             .navigationBarItems(trailing: profileButton)
             .sheet(isPresented: $showingProfile) {
-                Text("User Profile")
+                ProfileHost()
+                .environmentObject(self.userData)
             }
         }
     }

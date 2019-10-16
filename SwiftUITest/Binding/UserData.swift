@@ -11,4 +11,6 @@ final class UserData: ObservableObject {
     //@Published 信息修改时,对外发出通知
     @Published var showFavoritesOnly = false
     @Published var landmarks = Common.landmarkData
+    @Published var profile = Profile.default
+
 }
