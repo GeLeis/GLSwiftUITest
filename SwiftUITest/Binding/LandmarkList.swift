@@ -11,7 +11,7 @@ import SwiftUI
 struct LandmarkList: View {
     @EnvironmentObject var userData: UserData
     var body: some View {
-        NavigationView {
+//        NavigationView {
             List {
                 Toggle(isOn: $userData.showFavoritesOnly) {
                     Text("Favorites only")
@@ -25,12 +25,15 @@ struct LandmarkList: View {
                 }
             }
             .navigationBarTitle(Text("Landrksss"))
-        }
+//        }
     }
 }
 
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkList()
+        NavigationView {
+            LandmarkList()
+                .environmentObject(UserData())
+        }
     }
 }

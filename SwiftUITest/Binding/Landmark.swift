@@ -29,6 +29,7 @@ struct Landmark: Hashable, Codable ,HandyJSON {
     var park: String
     var category: Category
     var isFavorite = false
+    var isFeatured = true
 
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(

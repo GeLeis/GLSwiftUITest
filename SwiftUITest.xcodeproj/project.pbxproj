@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		283E4EFE2356B38700527CE0 /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283E4EFD2356B38700527CE0 /* CategoryHome.swift */; };
+		283E4F002356B73100527CE0 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283E4EFF2356B73100527CE0 /* CategoryRow.swift */; };
 		285036C823542AC300AF7EB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285036C723542AC300AF7EB1 /* AppDelegate.swift */; };
 		285036CA23542AC300AF7EB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285036C923542AC300AF7EB1 /* SceneDelegate.swift */; };
 		285036CC23542AC300AF7EB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285036CB23542AC300AF7EB1 /* ContentView.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		283E4EFD2356B38700527CE0 /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
+		283E4EFF2356B73100527CE0 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		285036C423542AC300AF7EB1 /* SwiftUITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		285036C723542AC300AF7EB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		285036C923542AC300AF7EB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		283E4EFC2356B37800527CE0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				283E4EFD2356B38700527CE0 /* CategoryHome.swift */,
+				283E4EFF2356B73100527CE0 /* CategoryRow.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		285036BB23542AC200AF7EB1 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +118,7 @@
 		285036C623542AC300AF7EB1 /* SwiftUITest */ = {
 			isa = PBXGroup;
 			children = (
+				283E4EFC2356B37800527CE0 /* Home */,
 				285037042355A85E00AF7EB1 /* Common */,
 				285036FB23559E5700AF7EB1 /* Binding */,
 				285036FA23559E3400AF7EB1 /* Canvas */,
@@ -321,6 +335,7 @@
 				285036FD23559E8C00AF7EB1 /* HikeView.swift in Sources */,
 				285037062355A86900AF7EB1 /* Data.swift in Sources */,
 				285036FF2355A72500AF7EB1 /* Hike.swift in Sources */,
+				283E4F002356B73100527CE0 /* CategoryRow.swift in Sources */,
 				285036E82354507D00AF7EB1 /* LandmarkList.swift in Sources */,
 				285036EE235566F600AF7EB1 /* UserData.swift in Sources */,
 				285036CC23542AC300AF7EB1 /* ContentView.swift in Sources */,
@@ -332,6 +347,7 @@
 				285036EA23545E7A00AF7EB1 /* Common.swift in Sources */,
 				285036E423544F5100AF7EB1 /* LandmarkDetail.swift in Sources */,
 				285036F823559A0D00AF7EB1 /* RotatedBadgeSymbol.swift in Sources */,
+				283E4EFE2356B38700527CE0 /* CategoryHome.swift in Sources */,
 				285037032355A7D600AF7EB1 /* HikeDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
