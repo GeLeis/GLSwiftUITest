@@ -23,7 +23,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        let contentView = ContentView()
 
         // Use a UIHostingController as window root view controller.
-        let rootView = CategoryHome().environmentObject(UserData())
+//        let rootView = CategoryHome().environmentObject(UserData())
+        
+        let rootView = PageView(features.map { FeatureCard(landmark: $0) })
+        .aspectRatio(3/2, contentMode: .fit)
 //        let rootView = HikeView(hike: hikeData[0]);
 //        let rootView = CategoryHome();
         if let windowScene = scene as? UIWindowScene {

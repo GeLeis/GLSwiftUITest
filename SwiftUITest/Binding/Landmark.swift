@@ -36,6 +36,14 @@ struct Landmark: Hashable, Codable ,HandyJSON {
             latitude: coordinates.latitude,
             longitude: coordinates.longitude)
     }
+    var featureImage: Image? {
+        guard isFeatured else { return nil }
+        
+        return Image(
+            ImageStore.loadImage(name: "\(imageName)"),
+            scale: 2,
+            label: Text(verbatim: name))
+    }
 
     enum Category: String, CaseIterable, Codable, Hashable {
         case featured = "Featured"
